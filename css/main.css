@@ -1,21 +1,49 @@
-.purple {
-    background-color: #4B4BDF;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
-
+/* portada principal */
 .white {
     color:#ffffff;
 }
 
-.select {
+.icon-e {
     background: #ffffff;
     color:#4B4BDF ;
     border-radius: 25px 25px 0 25px; 
     font-family: 'Pacifico', cursive;
     padding: 6px 15px;
+    font-size:24px;
 }
 
 .portada {
     height: auto;
     width: 100vw;
+    background: #4B4BDF;
+}
+
+.butt-toggle{
+    background: #ffffff;
+    border-radius: 25px 25px 25px 0px;
+    padding: 10px 15px; 
+}
+
+.blue {
+    color:#4B4BDF;
+}
+
+.outline {
+    outline: 1px solid red;
+}
+
+.link-sec:hover {
+   color:#ffffff;
+   padding: 2px;
+   border-bottom: 3px solid #F3C01E;
+}
+
+.back-blue {
     background: #4B4BDF;
 }
