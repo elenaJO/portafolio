@@ -1,0 +1,21 @@
+.purple {
+    background-color: #4B4BDF;
+}
+
+.white {
+    color:#ffffff;
+}
+
+.select {
+    background: #ffffff;
+    color:#4B4BDF ;
+    border-radius: 25px 25px 0 25px; 
+    font-family: 'Pacifico', cursive;
+    padding: 6px 15px;
+}
+
+.portada {
+    height: auto;
+    width: 100vw;
+    background: #4B4BDF;
+}
