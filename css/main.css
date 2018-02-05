@@ -1,3 +1,7 @@
+body {
+    position: relative;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -19,9 +23,11 @@
 }
 
 .portada {
-    height: auto;
+    /* height: auto; */
     width: 100vw;
     background: #4B4BDF;
+    outline: 1px solid red;
+    height: 100vh;
 }
 
 .butt-toggle{
@@ -39,9 +45,11 @@
 }
 
 .link-sec:hover {
-   color:#ffffff;
+   /* color:#ffffff;
    padding: 2px;
-   border-bottom: 3px solid #F3C01E;
+   border-bottom: 3px solid #F3C01E; */
+   background-color: #6C6BE4;
+   color: #ffffff;
 }
 
 .back-blue {
