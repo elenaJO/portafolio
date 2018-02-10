@@ -53,6 +53,8 @@ body {
 
 .back-blue {
     background:  #6161E1 ;
+    box-shadow: 10px 10px 26px -7px rgba(0,0,0,0.36);
+    
 }
 
 i {
@@ -93,7 +95,7 @@ i.off {
     box-shadow: 10px 10px 26px -7px rgba(0,0,0,0.36);
     padding: 10px;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 40px;
     margin-right: 20px;
 }
 
@@ -101,4 +103,20 @@ i.off {
     width: 100%;
     background: #f5f9fc ;
     height: 100vh;
+}
+
+/* seccion tres */
+.section-3{
+    width: 100%;
+    height: 100vh;
+}
+
+.icon-mouse {
+    color:white;
+    background: linear-gradient(to bottom, rgba(84,247,255,1) 0%, rgba(84,247,255,1) 2%, rgba(89,163,255,1) 36%, rgba(40,88,255,1) 75%, rgba(40,88,255,1) 100%);
+    box-shadow: 10px 10px 26px -7px rgba(0,0,0,0.36);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 40px;
+    margin-right: 20px;
 }
