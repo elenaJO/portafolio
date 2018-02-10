@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+
 body {
     position: relative;
   }
@@ -23,11 +25,13 @@ body {
 }
 
 .portada {
-    /* height: auto; */
     width: 100%;
     background: #4B4BDF;
-    /* outline: 1px solid red; */
     height: 100vh;
+     background-image: url(../assets/back-portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .butt-toggle{
@@ -45,13 +49,49 @@ body {
 }
 
 .link-sec:hover {
-   /* color:#ffffff;
-   padding: 2px;
-   border-bottom: 3px solid #F3C01E; */
-   background-color: #6C6BE4;
-   color: #ffffff;
+   background-color: #ffffff;
+   color:#4B4BDF;
 }
 
 .back-blue {
-    background: #4B4BDF;
+    background:  #6161E1 ;
+}
+
+/* secccion 2 */
+.section-2 {
+    width: 100%;
+    background: #f5f9fc ;
+    height: 100vh;
+}
+
+/* neon */
+.neon {
+	display: table-cell;
+	text-align: center;
+    vertical-align: middle;
+}
+
+i {
+    font: normal 100px 'Nixie One';
+    color: #FFF200;
+	text-shadow: 0 0 30px #FFF200, 
+    /* 0 0 10px #FEE442 , 
+    0 0 100px #FED12A, 
+    0 0 500px #FEAD08,   */
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  i.off {
+      color: rgba(46, 46, 46, 0.61);
+      text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+.info-portada {
+    padding-top: 100px;
+}
+
+.paragraph-portada {
+    font-family:  'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
 }
