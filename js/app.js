@@ -1,4 +1,3 @@
-// $('body').scrollspy({ target: '#navbar-example2' })
 
 var textHolder = document.getElementById('elena'),
   text = textHolder.innerHTML,
@@ -7,12 +6,12 @@ var textHolder = document.getElementById('elena'),
 	i;	
 
 for (i = 0; i < chars; i += 1) {
-	newText += '<i>' + text.charAt(i) + '</i>';
+	newText += '<span>' + text.charAt(i) + '</span>';
 }
 
 textHolder.innerHTML = newText;
 
-var letters = document.getElementsByTagName('i'),
+var letters = document.getElementsByTagName('span'),
 	flickers = [5, 7, 9, 11, 13, 15, 17],
 	randomLetter,
 	flickerNumber,

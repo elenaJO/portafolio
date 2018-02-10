@@ -7,7 +7,7 @@ body {
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family: 'Raleway', sans-serif;
 }
 /* portada principal */
@@ -71,17 +71,14 @@ body {
     vertical-align: middle;
 }
 
-i {
+span {
     font: normal 100px 'Nixie One';
     color: #FFF200;
 	text-shadow: 0 0 30px #FFF200, 
-    /* 0 0 10px #FEE442 , 
-    0 0 100px #FED12A, 
-    0 0 500px #FEAD08,   */
-		5px 9px 5px rgba(0, 0, 0, 0.5);
+    5px 9px 5px rgba(0, 0, 0, 0.5);
   }
   
-  i.off {
+  span.off {
       color: rgba(46, 46, 46, 0.61);
       text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
   }
@@ -95,3 +92,13 @@ i {
     color: #ffffff;
     font-size: 1.5rem;
 }
+
+/* seccion 2 */
+
+.fa {
+    padding: 30px;
+}
+
+/* .container-woman{
+    outline: 1px solid red;
+} */
