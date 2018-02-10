@@ -6,12 +6,12 @@ var textHolder = document.getElementById('elena'),
 	i;	
 
 for (i = 0; i < chars; i += 1) {
-	newText += '<span>' + text.charAt(i) + '</span>';
+	newText += '<i>' + text.charAt(i) + '</i>';
 }
 
 textHolder.innerHTML = newText;
 
-var letters = document.getElementsByTagName('span'),
+var letters = document.getElementsByTagName('i'),
 	flickers = [5, 7, 9, 11, 13, 15, 17],
 	randomLetter,
 	flickerNumber,
