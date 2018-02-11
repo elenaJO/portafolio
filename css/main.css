@@ -157,3 +157,25 @@ i.off {
     border-radius: 50px;
     font-size: 40px;
 }
+
+a:hover{
+   text-decoration: none;
+}
+
+.icon-facebook , .icon-github, .icon-linkedin{
+    background: #ffffff;
+    box-shadow: 10px 10px 26px -7px rgba(0,0,0,0.36);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 40px;
+}
+
+.icon-envelope {
+    color:black;
+    background: linear-gradient(to right, rgba(239,108,219,1) 0%, rgba(255,184,229,1) 18%, rgba(255,237,189,1) 51%, rgba(255,255,142,1) 80%, rgba(255,214,82,1) 93%, rgba(255,214,82,1) 100%);
+    box-shadow: 10px 10px 26px -7px rgba(0,0,0,0.36);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 40px;
+
+}
