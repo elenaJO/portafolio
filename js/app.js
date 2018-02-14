@@ -22,7 +22,7 @@ function randomFromInterval(from,to) {
 }
 
 function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    return (element.className).indexOf(cls) > -1;
 }
 
 function flicker() {		
@@ -47,7 +47,7 @@ function flicker() {
 (function loop() {
     var rand = randomFromInterval(500,3000);
 
-	randomLetter = randomFromInterval(0, 10);
+	randomLetter = randomFromInterval(0, 4);
 	randomLetter = letters[randomLetter];
 	
 	flickerNumber = randomFromInterval(0, 6);
@@ -59,3 +59,10 @@ function flicker() {
             loop();  
     }, rand);
 }());
+
+jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},14000);
+});
+  
