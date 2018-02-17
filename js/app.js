@@ -1,68 +1,26 @@
+$(document).ready(function() {
+  let spans = document.querySelectorAll('.word span');
+  spans.forEach((span, idx) => {
+    span.addEventListener('click', (event) => {
+      event.target.classList.add('active');
+    });
+    span.addEventListener('animationend', (event) => {
+      event.target.classList.remove('active');
+    });
 
-var textHolder = document.getElementById('elena'),
-  text = textHolder.innerHTML,
-	chars = text.length,
-	newText = '',
-	i;	
+    setTimeout(() => {
+      span.classList.add('active');
+    }, 750 * (idx + 1));
+  });
 
-for (i = 0; i < chars; i += 1) {
-	newText += '<i>' + text.charAt(i) + '</i>';
-}
+  $('.skillbar').each(function() {
+    $(this).find('.skillbar-bar').animate({
+      width: $(this).attr('data-percent')
+    }, 20000);
+  });
 
-textHolder.innerHTML = newText;
-
-var letters = document.getElementsByTagName('i'),
-	flickers = [5, 7, 9, 11, 13, 15, 17],
-	randomLetter,
-	flickerNumber,
-	counter;
-
-function randomFromInterval(from,to) {
-	return Math.floor(Math.random()*(to-from+1)+from);
-}
-
-function hasClass(element, cls) {
-    return (element.className).indexOf(cls) > -1;
-}
-
-function flicker() {		
-	counter += 1;
-	
-	if (counter === flickerNumber) {
-		return;
-	}
-
-	setTimeout(function () {
-		if(hasClass(randomLetter, 'off')) {
-			randomLetter.className = '';
-		}
-		else {
-			randomLetter.className = 'off';
-		}
-
-		flicker();
-	}, 30);
-}
-
-(function loop() {
-    var rand = randomFromInterval(500,3000);
-
-	randomLetter = randomFromInterval(0, 4);
-	randomLetter = letters[randomLetter];
-	
-	flickerNumber = randomFromInterval(0, 6);
-	flickerNumber = flickers[flickerNumber];
-
-    setTimeout(function() {
-            counter = 0;
-            flicker();
-            loop();  
-    }, rand);
-}());
-
-jQuery('.skillbar').each(function(){
-	jQuery(this).find('.skillbar-bar').animate({
-		width:jQuery(this).attr('data-percent')
-	},14000);
+  $('.hover').mouseleave(function() {
+    $(this).removeClass('hover');
+  });
 });
-  
+
