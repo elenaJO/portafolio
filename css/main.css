@@ -5,11 +5,18 @@
     box-sizing: border-box;
 }
 .portada {
-   background-image: url(../assets/image/portada1.jpg);
+   background-image: url(../assets/image/portada3.jpg);
    background-size: cover;
    height: 100vh;
    background-repeat: no-repeat;
    background-position: center center;
+   padding-left: 0;
+}
+
+.back-negro {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
 }
 
 .style-navbar{
@@ -141,7 +148,7 @@
 }
 
 .black {
-    color:#1c1c1c;
+    color:#fff;
 }
 
 .icon {
