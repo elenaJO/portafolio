@@ -406,6 +406,11 @@
       width: 110px;
   }
 
+  .redux{
+      width: 150px;
+      height: 70px;
+  }
+
   .footer > p {
       margin-bottom: 0px;
   }
